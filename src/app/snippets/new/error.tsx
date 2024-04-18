@@ -3,10 +3,9 @@
 
 interface Props {
     error: Error;
-    reset: () => void;
 }
 
-export default function ErrorPage({ error, reset }: Props) {
+export default function ErrorPage({ error }: Props) {
   return (
     <div>{error.message}</div>
   )
